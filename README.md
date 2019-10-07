@@ -32,6 +32,12 @@ features_to_evaluate = [0, 1, 2]  ###Notice that the first feature is index 0, t
 ### CatboostError: Invalid cat_features[55] = 451 value: must be < 446..
 Check the length of your indices, length of indices should be one less than total number of features.
 
+ ### CatBoostError: Error in dsv data. Line 1: Column 54 (type Num, value = "F"): catboost/libs/data_new/cb_dsv_loader.cpp:146: Factor 53 cannot be parsed as float. Try correcting column description file
+Misaligned indices for cat_features leading to string cat_features being input as numeric features
+
+### CatBoostError Max target greater than 1: 3.57754e+06
+Error with choosing the loss function, probabilities should not be greater than 1.
+
 
 Right now, we’re in your first GitHub **repository**. A repository is like a folder or storage space for your project. Your project's repository contains all its files such as code, documentation, images, and more. It also tracks every change that you—or your collaborators—make to each file, so you can always go back to previous versions of your project if you make any mistakes.
 
