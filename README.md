@@ -5,6 +5,9 @@ I have a working example of my Catboost model uploaded but I have a quick and di
 My model includes code for CatBoost Classification and feature selection. Feature selection does not lend itself well because the competition was judged on AUC score while binary labels were provided in the train data.
 This makes it difficult to do feature selection as we have to decide on an arbitrary target border for the probabilities.
 
+#Download the train/test data here
+https://www.kaggle.com/c/ieee-fraud-detection/data
+
 ## Common Errors
 ### ValueError: could not convert string to float:
 Separate your features into a list for numeric features and categorical features. Make sure no categorical features are listed as numeric features as catboost assumes anything not input as categorical is numeric.
