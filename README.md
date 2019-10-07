@@ -2,6 +2,8 @@
 
 During the IEEE CIS Fraud competition, I spent alot of time debugging my Catboost model and I wanted to save anyone else the trouble.
 I have a working example of my Catboost model uploaded but I have a quick and dirty summary of the errors below.
+My model includes code for CatBoost Classification and feature selection. Feature selection does not lend itself well because the competition was judged on AUC score while binary labels were provided in the train data.
+This makes it difficult to do feature selection as we have to decide on an arbitrary target border for the probabilities.
 
 ## Common Errors
 ### ValueError: could not convert string to float:
